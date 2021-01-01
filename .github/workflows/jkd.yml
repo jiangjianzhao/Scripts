@@ -1,4 +1,4 @@
-name: 聚看点
+name: 聚看点1
 
 on:
   workflow_dispatch:
@@ -25,11 +25,11 @@ jobs:
         run: |
           cd ~/Scripts
           npm install
-      - name: '运行 【聚看点】'
+      - name: '运行 【聚看点1】'
         if: env.JKD_COOKIE
         run: |
           cd ~/Scripts
-          node Task/JKD.js
+          node Task/jkd.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
